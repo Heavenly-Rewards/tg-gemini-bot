@@ -17,7 +17,7 @@ IS_DEBUG_MODE = os.getenv("IS_DEBUG_MODE", '0')
 ADMIN_ID = os.getenv("ADMIN_ID", "1234567890")
 
 #Determines whether to verify identity. If 0, anyone can use the bot. It is enabled by default.
-AUCH_ENABLE = os.getenv("AUCH_ENABLE", "1")
+AUCH_ENABLE = os.getenv("AUCH_ENABLE", "0")
 
 #"1"to use the same chat history in the group, "2"to record chat history individually for each person
 GROUP_MODE = os.getenv("GROUP_MODE=", "1")
