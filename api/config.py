@@ -4,7 +4,7 @@ from re import split
 """ Required """
 
 BOT_TOKEN = os.environ.get("BOT_TOKEN")
-GOOGLE_API_KEY = split(r'[ ,;，；]+', os.environ.get("AIzaSyBXPnMnUmoWcXml2IBj0iDgLyBxMgnx1iA"))
+GOOGLE_API_KEY = split(r'[ ,;，；]+', os.environ.get("GOOGEL_API_KEY"))
 
 """ Optional """
 
@@ -12,15 +12,15 @@ ALLOWED_USERS = split(r'[ ,;，；]+', os.getenv("ALLOWED_USERS", '').replace("@
 ALLOWED_GROUPS = split(r'[ ,;，；]+', os.getenv("ALLOWED_GROUPS", '').replace("@", "").lower())
 
 #Whether to push logs and enable some admin commands
-IS_DEBUG_MODE = os.getenv("IS_DEBUG_MODE", '0')
+IS_DEBUG_MODE = os.getenv("IS_DEBUG_MODE", '1')
 #The target account that can execute administrator instructions and log push can use /get_my_info to obtain the ID.
-ADMIN_ID = os.getenv("ADMIN_ID", "1234567890")
+ADMIN_ID = os.getenv("ADMIN_ID", "1384015881")
 
 #Determines whether to verify identity. If 0, anyone can use the bot. It is enabled by default.
-AUCH_ENABLE = os.getenv("AUCH_ENABLE", "0")
+AUCH_ENABLE = os.getenv("AUCH_ENABLE", "1")
 
 #"1"to use the same chat history in the group, "2"to record chat history individually for each person
-GROUP_MODE = os.getenv("GROUP_MODE=", "1")
+GROUP_MODE = os.getenv("GROUP_MODE=", "2")
 
 #After setting up 3 rounds of dialogue, prompt the user to start a new dialogue
 prompt_new_threshold = int(3)
